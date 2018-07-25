@@ -39,7 +39,7 @@ public class FlappyBird {
 			// -----------------------------------------------------------------------------------------------
 			// UPDATE BIRD POSITION
 			// Holding down on the mouse = fly up; no hold = fall down
-			if (Window.mouse.clicked() != true) {
+			if (Window.key.pressed(' ') != true) {
 				y = y + gravity;
 			} else {
 				y = y - gravity;
@@ -69,29 +69,50 @@ public class FlappyBird {
 		Window.out.background("sky blue");
 		
 		// Tree
-		Window.out.color("dark green");
-		Window.out.circle(width / 6, height - 100, 150);
+		drawLeaves(width / 6);
 		drawTrunk(width / 6);
 		
 		// Tree
-		Window.out.color("light green");
-		Window.out.circle(width / 2, height - 150, 150);
+		drawLeaves(width / 2);
 		drawTrunk(width / 2);
 		
 		// Tree
-		Window.out.color("dark green");
-		Window.out.circle(width / 2 + (2 * (width / 6)), height - 120, 150);
+		drawLeaves(width / 2 + (2 * (width / 6)));
 		drawTrunk(width / 2 + (2 * (width / 6)));
 	}
 	
 	public static void drawLeaves(int centerWidth) {
+		Window.out.color(74,145,27);
+		Window.out.circle(centerWidth, height - 150, 35);
 		
+		Window.out.color(58, 132, 32);
+		Window.out.circle(centerWidth, height - 275, 55);
+		
+		Window.out.color("dark green");
+		Window.out.circle(centerWidth - 50, height - 100, 50);
+		Window.out.color("green");
+		Window.out.circle(centerWidth, height - 50, 40);
+		Window.out.color(136, 178, 108);
+		Window.out.circle(centerWidth + 50, height - 100, 50);
+		
+		Window.out.color(145, 198, 125);
+		Window.out.circle(centerWidth + 75, height - 250, 35);
+		
+		Window.out.color(60, 137, 32);
+		Window.out.circle(centerWidth, height - 100, 35);
+		
+		Window.out.color("green");
+		Window.out.circle(centerWidth - 75, height - 200, 70);
+		Window.out.color(136, 178, 108);
+		Window.out.circle(centerWidth + 25, height - 250, 50);
+		Window.out.color("dark green");
+		Window.out.circle(centerWidth + 40, height - 200, 55);
 	}
 	
 	public static void drawTrunk(int centerWidth) {
 		// Draw trunk
 		Window.out.color(107,72,27);
-		Window.out.rectangle(centerWidth, height, 50, height/4);
+		Window.out.rectangle(centerWidth, height, 40, height/3 + 45);
 		
 		// Draw shadow lines
 		Window.out.color(128,100,63);
@@ -99,11 +120,11 @@ public class FlappyBird {
 		Window.out.color(128,100,63);
 		Window.out.rectangle(centerWidth + 5, height, 2, height/4);
 		Window.out.color(128,100,63);
-		Window.out.rectangle(centerWidth, height, 2, height/4);
+		Window.out.rectangle(centerWidth, height, 2, height/3);
 		Window.out.color(128,100,63);
-		Window.out.rectangle(centerWidth + 18, height, 2, height/4);
+		Window.out.rectangle(centerWidth + 18, height, 2, height/3);
 		Window.out.color(128,100,63);
-		Window.out.rectangle(centerWidth - 18, height, 2, height/4);
+		Window.out.rectangle(centerWidth - 18, height, 2, height/3);
 	}
 	
 	public static void drawBird(int x, int y) {
