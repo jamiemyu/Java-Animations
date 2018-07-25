@@ -7,3 +7,5 @@ Developed these animations for teaching Introduction to Java at Techlab Educatio
 
 For more information on Techlab, go to https://techlab.education/.
 
+Flappy Bird Game:
+[![Watch the video]](https://youtu.be/Ftks3SwpdVk)
