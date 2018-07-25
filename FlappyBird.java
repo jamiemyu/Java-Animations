@@ -1,3 +1,8 @@
+/**
+ * Author: Jamie Yu
+ * Date: 7/24/2018
+ */
+
 package JavaDay4;
 
 import apcs.Window;
