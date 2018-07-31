@@ -39,6 +39,9 @@ public class GameOfLife {
 			    cells[yClick][xClick] = true;
 			}
 			
+			/**
+			 * Use the SPACEBAR to run simulation (update frames/increase "time")
+			 */
 			if (Window.key.pressed(' ')) cells = life(cells);
 		 }	
 	}
