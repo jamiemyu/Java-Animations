@@ -14,7 +14,6 @@ alt="Flappy Bird Game" width="240" height="180" border="10" /></a>
 
 # Game of Life Simulation
 <a href="https://youtu.be/1M9NYEUW57A
-" target="_blank"><img src="
-http://i3.ytimg.com/vi/1M9NYEUW57A/hqdefault.jpg" 
+" target="_blank"><img src="http://i3.ytimg.com/vi/1M9NYEUW57A/hqdefault.jpg" 
 alt="Game of Life Simulation" width="240" height="180" border="10" /></a>
 
