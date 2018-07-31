@@ -10,11 +10,15 @@ public class GameOfLife {
 		int side = Window.width()/cw;
 		
 		boolean[][] cells = new boolean [cw][ch];
-		for(int y = 0; y < ch; y++){
-			for (int x=0; x < cw; x++){
-				cells[y][x] = Window.flipCoin();
-			}
-		}
+
+/**
+ * COMMENT THIS OUT for a blank board (to allow manual drawing of cells at t=0.
+ */
+//		for(int y = 0; y < ch; y++){
+//			for (int x=0; x < cw; x++){
+//				cells[y][x] = Window.flipCoin();
+//			}
+//		}
 
 		while(true) {
 			Window.frame();
